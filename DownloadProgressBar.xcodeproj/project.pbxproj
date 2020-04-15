@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014AE27C2433BEB300DA50C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AE27B2433BEB300DA50C9 /* AppDelegate.swift */; };
+		014AE27E2433BEB300DA50C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AE27D2433BEB300DA50C9 /* SceneDelegate.swift */; };
+		014AE2802433BEB300DA50C9 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AE27F2433BEB300DA50C9 /* DownloadViewController.swift */; };
+		014AE2852433BEB400DA50C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014AE2842433BEB400DA50C9 /* Assets.xcassets */; };
+		014AE2882433BEB400DA50C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014AE2862433BEB400DA50C9 /* LaunchScreen.storyboard */; };
+		014AE2932433BEB400DA50C9 /* DownloadProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AE2922433BEB400DA50C9 /* DownloadProgressBarTests.swift */; };
+		014AE29E2433BEB400DA50C9 /* DownloadProgressBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014AE29D2433BEB400DA50C9 /* DownloadProgressBarUITests.swift */; };
+		014AE2AC2433BEEE00DA50C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014AE2AB2433BEEE00DA50C9 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		014AE28F2433BEB400DA50C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 014AE2702433BEB300DA50C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 014AE2772433BEB300DA50C9;
+			remoteInfo = DownloadProgressBar;
+		};
+		014AE29A2433BEB400DA50C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 014AE2702433BEB300DA50C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 014AE2772433BEB300DA50C9;
+			remoteInfo = DownloadProgressBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014AE2782433BEB300DA50C9 /* DownloadProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownloadProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		014AE27B2433BEB300DA50C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		014AE27D2433BEB300DA50C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		014AE27F2433BEB300DA50C9 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
+		014AE2842433BEB400DA50C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		014AE2872433BEB400DA50C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		014AE2892433BEB400DA50C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014AE28E2433BEB400DA50C9 /* DownloadProgressBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadProgressBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		014AE2922433BEB400DA50C9 /* DownloadProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressBarTests.swift; sourceTree = "<group>"; };
+		014AE2942433BEB400DA50C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014AE2992433BEB400DA50C9 /* DownloadProgressBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownloadProgressBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		014AE29D2433BEB400DA50C9 /* DownloadProgressBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadProgressBarUITests.swift; sourceTree = "<group>"; };
+		014AE29F2433BEB400DA50C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		014AE2AB2433BEEE00DA50C9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		014AE2752433BEB300DA50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE28B2433BEB400DA50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE2962433BEB400DA50C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014AE26F2433BEB300DA50C9 = {
+			isa = PBXGroup;
+			children = (
+				014AE27A2433BEB300DA50C9 /* DownloadProgressBar */,
+				014AE2912433BEB400DA50C9 /* DownloadProgressBarTests */,
+				014AE29C2433BEB400DA50C9 /* DownloadProgressBarUITests */,
+				014AE2792433BEB300DA50C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		014AE2792433BEB300DA50C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				014AE2782433BEB300DA50C9 /* DownloadProgressBar.app */,
+				014AE28E2433BEB400DA50C9 /* DownloadProgressBarTests.xctest */,
+				014AE2992433BEB400DA50C9 /* DownloadProgressBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		014AE27A2433BEB300DA50C9 /* DownloadProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				01512CF624475B5700328D19 /* View */,
+				01512CF824475B8A00328D19 /* Controller */,
+				01512CF724475B7000328D19 /* SupportFiles */,
+				014AE2842433BEB400DA50C9 /* Assets.xcassets */,
+				014AE2892433BEB400DA50C9 /* Info.plist */,
+			);
+			path = DownloadProgressBar;
+			sourceTree = "<group>";
+		};
+		014AE2912433BEB400DA50C9 /* DownloadProgressBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				014AE2922433BEB400DA50C9 /* DownloadProgressBarTests.swift */,
+				014AE2942433BEB400DA50C9 /* Info.plist */,
+			);
+			path = DownloadProgressBarTests;
+			sourceTree = "<group>";
+		};
+		014AE29C2433BEB400DA50C9 /* DownloadProgressBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				014AE29D2433BEB400DA50C9 /* DownloadProgressBarUITests.swift */,
+				014AE29F2433BEB400DA50C9 /* Info.plist */,
+			);
+			path = DownloadProgressBarUITests;
+			sourceTree = "<group>";
+		};
+		01512CF624475B5700328D19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				014AE2AB2433BEEE00DA50C9 /* Main.storyboard */,
+				014AE2862433BEB400DA50C9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		01512CF724475B7000328D19 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				014AE27B2433BEB300DA50C9 /* AppDelegate.swift */,
+				014AE27D2433BEB300DA50C9 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		01512CF824475B8A00328D19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				014AE27F2433BEB300DA50C9 /* DownloadViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		014AE2772433BEB300DA50C9 /* DownloadProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014AE2A22433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBar" */;
+			buildPhases = (
+				014AE2742433BEB300DA50C9 /* Sources */,
+				014AE2752433BEB300DA50C9 /* Frameworks */,
+				014AE2762433BEB300DA50C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownloadProgressBar;
+			productName = DownloadProgressBar;
+			productReference = 014AE2782433BEB300DA50C9 /* DownloadProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		014AE28D2433BEB400DA50C9 /* DownloadProgressBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014AE2A52433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBarTests" */;
+			buildPhases = (
+				014AE28A2433BEB400DA50C9 /* Sources */,
+				014AE28B2433BEB400DA50C9 /* Frameworks */,
+				014AE28C2433BEB400DA50C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				014AE2902433BEB400DA50C9 /* PBXTargetDependency */,
+			);
+			name = DownloadProgressBarTests;
+			productName = DownloadProgressBarTests;
+			productReference = 014AE28E2433BEB400DA50C9 /* DownloadProgressBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		014AE2982433BEB400DA50C9 /* DownloadProgressBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 014AE2A82433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBarUITests" */;
+			buildPhases = (
+				014AE2952433BEB400DA50C9 /* Sources */,
+				014AE2962433BEB400DA50C9 /* Frameworks */,
+				014AE2972433BEB400DA50C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				014AE29B2433BEB400DA50C9 /* PBXTargetDependency */,
+			);
+			name = DownloadProgressBarUITests;
+			productName = DownloadProgressBarUITests;
+			productReference = 014AE2992433BEB400DA50C9 /* DownloadProgressBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		014AE2702433BEB300DA50C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Sharif Rafi";
+				TargetAttributes = {
+					014AE2772433BEB300DA50C9 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					014AE28D2433BEB400DA50C9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 014AE2772433BEB300DA50C9;
+					};
+					014AE2982433BEB400DA50C9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 014AE2772433BEB300DA50C9;
+					};
+				};
+			};
+			buildConfigurationList = 014AE2732433BEB300DA50C9 /* Build configuration list for PBXProject "DownloadProgressBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 014AE26F2433BEB300DA50C9;
+			productRefGroup = 014AE2792433BEB300DA50C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				014AE2772433BEB300DA50C9 /* DownloadProgressBar */,
+				014AE28D2433BEB400DA50C9 /* DownloadProgressBarTests */,
+				014AE2982433BEB400DA50C9 /* DownloadProgressBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		014AE2762433BEB300DA50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014AE2882433BEB400DA50C9 /* LaunchScreen.storyboard in Resources */,
+				014AE2852433BEB400DA50C9 /* Assets.xcassets in Resources */,
+				014AE2AC2433BEEE00DA50C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE28C2433BEB400DA50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE2972433BEB400DA50C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		014AE2742433BEB300DA50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014AE2802433BEB300DA50C9 /* DownloadViewController.swift in Sources */,
+				014AE27C2433BEB300DA50C9 /* AppDelegate.swift in Sources */,
+				014AE27E2433BEB300DA50C9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE28A2433BEB400DA50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014AE2932433BEB400DA50C9 /* DownloadProgressBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		014AE2952433BEB400DA50C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014AE29E2433BEB400DA50C9 /* DownloadProgressBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		014AE2902433BEB400DA50C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 014AE2772433BEB300DA50C9 /* DownloadProgressBar */;
+			targetProxy = 014AE28F2433BEB400DA50C9 /* PBXContainerItemProxy */;
+		};
+		014AE29B2433BEB400DA50C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 014AE2772433BEB300DA50C9 /* DownloadProgressBar */;
+			targetProxy = 014AE29A2433BEB400DA50C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		014AE2862433BEB400DA50C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				014AE2872433BEB400DA50C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		014AE2A02433BEB400DA50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		014AE2A12433BEB400DA50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		014AE2A32433BEB400DA50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		014AE2A42433BEB400DA50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		014AE2A62433BEB400DA50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownloadProgressBar.app/DownloadProgressBar";
+			};
+			name = Debug;
+		};
+		014AE2A72433BEB400DA50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownloadProgressBar.app/DownloadProgressBar";
+			};
+			name = Release;
+		};
+		014AE2A92433BEB400DA50C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DownloadProgressBar;
+			};
+			name = Debug;
+		};
+		014AE2AA2433BEB400DA50C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DownloadProgressBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rafi.DownloadProgressBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DownloadProgressBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		014AE2732433BEB300DA50C9 /* Build configuration list for PBXProject "DownloadProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014AE2A02433BEB400DA50C9 /* Debug */,
+				014AE2A12433BEB400DA50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		014AE2A22433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014AE2A32433BEB400DA50C9 /* Debug */,
+				014AE2A42433BEB400DA50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		014AE2A52433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014AE2A62433BEB400DA50C9 /* Debug */,
+				014AE2A72433BEB400DA50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		014AE2A82433BEB400DA50C9 /* Build configuration list for PBXNativeTarget "DownloadProgressBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				014AE2A92433BEB400DA50C9 /* Debug */,
+				014AE2AA2433BEB400DA50C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 014AE2702433BEB300DA50C9 /* Project object */;
+}

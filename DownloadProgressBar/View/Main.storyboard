@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cGE-a5-aSa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Download View Controller-->
+        <scene sceneID="6rJ-sQ-3dl">
+            <objects>
+                <viewController storyboardIdentifier="DownloadView" id="cGE-a5-aSa" customClass="DownloadViewController" customModule="DownloadProgressBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLA-8y-xKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mb7-bZ-CcM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Download" id="AqR-Pk-8S7"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0P-d4-EI1">
+                                <rect key="frame" x="80" y="174" width="254" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="C8Z-j7-Ajk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Start Download">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDownloadButton:" destination="cGE-a5-aSa" eventType="touchUpInside" id="kmj-QM-aEL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBJ-eR-9UO">
+                                <rect key="frame" x="20" y="294" width="374" height="280"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEV-JP-cjj">
+                                        <rect key="frame" x="30" y="45" width="314" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="GCB-p8-bFK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xnI-sy-YwZ">
+                                        <rect key="frame" x="10" y="134" width="354" height="2"/>
+                                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="BYV-kF-lcq"/>
+                                        </constraints>
+                                    </progressView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clx-QU-cQb">
+                                        <rect key="frame" x="90" y="160" width="194" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SIu-3D-Jqz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="xnI-sy-YwZ" firstAttribute="top" secondItem="AEV-JP-cjj" secondAttribute="bottom" constant="24" id="2zP-Ar-waM"/>
+                                    <constraint firstItem="xnI-sy-YwZ" firstAttribute="trailing" secondItem="AEV-JP-cjj" secondAttribute="trailing" constant="20" id="8e6-hK-4Mc"/>
+                                    <constraint firstItem="clx-QU-cQb" firstAttribute="leading" secondItem="AEV-JP-cjj" secondAttribute="leading" constant="60" id="AUS-QG-FMM"/>
+                                    <constraint firstAttribute="trailing" secondItem="AEV-JP-cjj" secondAttribute="trailing" constant="30" id="AXV-VN-FTe"/>
+                                    <constraint firstItem="clx-QU-cQb" firstAttribute="top" secondItem="xnI-sy-YwZ" secondAttribute="bottom" constant="24" id="BgZ-8G-7ll"/>
+                                    <constraint firstAttribute="height" constant="280" id="IbK-F3-94R"/>
+                                    <constraint firstItem="AEV-JP-cjj" firstAttribute="top" secondItem="oBJ-eR-9UO" secondAttribute="top" constant="45" id="JaQ-fK-lpW"/>
+                                    <constraint firstItem="xnI-sy-YwZ" firstAttribute="leading" secondItem="AEV-JP-cjj" secondAttribute="leading" constant="-20" id="Lx5-7A-jqi"/>
+                                    <constraint firstItem="clx-QU-cQb" firstAttribute="trailing" secondItem="AEV-JP-cjj" secondAttribute="trailing" constant="-60" id="hxh-V6-wvU"/>
+                                    <constraint firstItem="AEV-JP-cjj" firstAttribute="leading" secondItem="oBJ-eR-9UO" secondAttribute="leading" constant="30" id="zmw-NK-7HB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download Completed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIs-rd-zwo">
+                                <rect key="frame" x="20" y="707" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uiy-aq-UxY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oBJ-eR-9UO" firstAttribute="leading" secondItem="I0P-d4-EI1" secondAttribute="leading" constant="-60" id="4Bo-Zf-WKC"/>
+                            <constraint firstItem="o9h-pT-0mw" firstAttribute="bottom" secondItem="UIs-rd-zwo" secondAttribute="bottom" constant="115" id="6oh-ec-heo"/>
+                            <constraint firstItem="o9h-pT-0mw" firstAttribute="trailing" secondItem="I0P-d4-EI1" secondAttribute="trailing" constant="80" id="FED-we-9hZ"/>
+                            <constraint firstItem="oBJ-eR-9UO" firstAttribute="top" secondItem="I0P-d4-EI1" secondAttribute="bottom" constant="40" id="HRp-1z-Mp6"/>
+                            <constraint firstItem="UIs-rd-zwo" firstAttribute="leading" secondItem="o9h-pT-0mw" secondAttribute="leading" constant="20" id="KUs-qe-mP9"/>
+                            <constraint firstItem="o9h-pT-0mw" firstAttribute="trailing" secondItem="UIs-rd-zwo" secondAttribute="trailing" constant="20" id="N6u-Db-T53"/>
+                            <constraint firstItem="I0P-d4-EI1" firstAttribute="leading" secondItem="o9h-pT-0mw" secondAttribute="leading" constant="80" id="SvM-uS-dCW"/>
+                            <constraint firstItem="I0P-d4-EI1" firstAttribute="top" secondItem="o9h-pT-0mw" secondAttribute="top" constant="130" id="eJN-Bm-cff"/>
+                            <constraint firstItem="oBJ-eR-9UO" firstAttribute="trailing" secondItem="I0P-d4-EI1" secondAttribute="trailing" constant="60" id="xaG-zl-qV2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o9h-pT-0mw"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailContainerView" destination="oBJ-eR-9UO" id="2Az-0f-x0a"/>
+                        <outlet property="downloadCompleteLabel" destination="UIs-rd-zwo" id="FL2-DD-Nbb"/>
+                        <outlet property="loadingLabel" destination="AEV-JP-cjj" id="S3v-qF-ZeY"/>
+                        <outlet property="parcentageLabel" destination="clx-QU-cQb" id="27z-9x-mYh"/>
+                        <outlet property="progressBar" destination="xnI-sy-YwZ" id="evk-jj-Ugk"/>
+                        <outlet property="startButton" destination="I0P-d4-EI1" id="Qh3-cD-dG8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMF-K1-Cfr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5375.36231884058" y="61.607142857142854"/>
+        </scene>
+    </scenes>
+</document>
